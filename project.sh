@@ -1,8 +1,12 @@
+
+#23BIT276D
+#23BOT279D
+
+
 #!/bin/bash
-# ===========================================
+
 # File Organization Simulation in OS
-# Modified to clearly show differences
-# ===========================================
+
 
 DISK_SIZE=50   # smaller disk so output fits on screen
 for ((i=0; i<$DISK_SIZE; i++)); do
@@ -25,7 +29,7 @@ show_disk() {
 }
 
 add_metadata() {
-  echo "$1 $2 $3 $4" >> $METADATA
+  echo "$1 $2 $3 $4" >> $METADATA #filename filesize allocationtype bolckdetails
 }
 
 show_metadata() {
